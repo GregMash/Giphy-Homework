@@ -1,0 +1,29 @@
+html {
+    display: table-cell;
+    margin: auto;
+}
+
+body {
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    background-color: rgb(97, 182, 182);
+    text-align: center;
+
+}
+
+#button-container {
+    padding: 2%;
+}
+
+form {
+    padding: 2%;
+    margin: auto;
+}
+
+#gifs-view {
+    margin: auto;
+    max-width: 100%;
+    margin-top: 5%;
+    overflow: hidden;
+}

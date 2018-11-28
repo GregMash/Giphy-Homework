@@ -61,15 +61,17 @@ function getGifName() {
             const gifImage = $("<img>");
             //give the image a class to access from a click event, an original src, a src for both when they are animated and still,
             //and a state to contain their current state
-            gifImage.attr('src', results[i].images.original_still.url); 
-            gifImage.attr('data-still', results[i].images.original_still.url);  
-            gifImage.attr('data-animate', results[i].images.original.url);
+            gifImage.attr('src', results[i].images.fixed_height_still.url); 
+            gifImage.attr('data-still', results[i].images.fixed_height_still.url);  
+            gifImage.attr('data-animate', results[i].images.fixed_height.url);
             gifImage.attr('data-state', 'still')
             gifImage.addClass('gif')
-            //get the rating for the div also
-            const p = $("<p>").text("Rating: " + results[i].rating);
-            //append the image and rating to the div
-            gifDiv.append(p);
+            //get the title and rating for the div also
+            const pRating = $("<p>").text("Rating: " + results[i].rating);
+            const pTitle = $("<p>").text("Title: " + results[i].title);
+            //append the image, title, and rating to the div
+            gifDiv.append(pTitle);
+            gifDiv.append(pRating);
             gifDiv.append(gifImage);
             //add the div to the html
             $('#gifs-view').prepend(gifDiv);
