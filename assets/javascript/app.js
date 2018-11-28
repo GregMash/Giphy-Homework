@@ -61,8 +61,8 @@ function getGifName() {
             const gifImage = $("<img>");
             //give the image a class to access from a click event, an original src, a src for both when they are animated and still,
             //and a state to contain their current state
-            gifImage.attr('src', results[i].images.fixed_height_still.url); 
-            gifImage.attr('data-still', results[i].images.fixed_height_still.url);  
+            gifImage.attr('src', results[i].images.fixed_height_still.url);
+            gifImage.attr('data-still', results[i].images.fixed_height_still.url);
             gifImage.attr('data-animate', results[i].images.fixed_height.url);
             gifImage.attr('data-state', 'still')
             gifImage.addClass('gif')
@@ -82,10 +82,10 @@ function getGifName() {
 //this function takes the current state of the gif and changes it either to either still or animated based on what it currently is set to
 function animate() {
     const state = $(this).attr('data-state');
-    if( state === 'still') {
+    if (state === 'still') {
         $(this).attr('src', $(this).attr('data-animate'));
         $(this).attr('data-state', 'animate');
-    }else {
+    } else {
         $(this).attr('src', $(this).attr('data-still'));
         $(this).attr('data-state', 'still');
     }
