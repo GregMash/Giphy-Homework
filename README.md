@@ -2,7 +2,7 @@
 
 ## Overview
 
-This application let's users interact with GIF's. Use the box to search for new GIF's.
+This application lets users interact with GIF's. Use the box to search for new GIF's.
 
 Clicking on a button will display 10 still gifs on the subject, along with the rating of each.
 
