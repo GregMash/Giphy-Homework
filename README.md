@@ -18,7 +18,7 @@ Of course, the theme is cereals, but you can add whatever you would like to see 
 
 ## Hosted on GitHub
 
-[App](https://gregmash.github.io/Giphy-Homework/)
+[App](https://gregmash.github.io/giphy/)
 
 ## Technologies utilized
  - HTML
